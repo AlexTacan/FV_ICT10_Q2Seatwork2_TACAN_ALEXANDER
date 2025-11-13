@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>Student Grade Calculator</title>
+        <link rel="stylesheet" href="https://pyscript.net/releases/2025.8.1/core.css" />
+        <script type="module" src="https://pyscript.net/releases/2025.8.1/core.js"></script>
+        <style>
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+body center {
+    background: #fff5f5;
+    border: 2px solid #0049a3;
+    border-radius: 15px;
+    padding: 40px;
+    width: 400px;
+    box-shadow: 0px 4px 12px rgba(0,0,0,0.1);
+}
+
+h1 {
+    color: #0049a3;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #3a0d0d;
+    font-size: 1.2em;
+    margin-top: 20px;
+}
+
+input {
+    border: 2px solid #0049a3;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 1em;
+    margin: 5px;
+    width: 160px;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: #0049a3;
+    outline: none;
+    box-shadow: 0px 0px 4px #231e6a;
+}
+
+button {
+    background-color: #0049a3;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 0;
+    width: 100%;
+    font-size: 1em;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #0049a3;
+}
+        </style>
+    </head>
+   <center><body>
+    <h1>Student Grade Calculator</h1>
+
+    <input id="FirstName" type="text" placeholder="First Name">
+    <br><br>
+    <input id="LastName" type="text" placeholder="Last Name">
+
+    <br>
+    <h2>Enter your grades:</h2>
+    <input id="Science" type="number" placeholder="Science Grade">
+    <input id="Math" type="number" placeholder="Math Grade">
+    <br><br>
+    <input id="English" type="number" placeholder="English Grade">
+    <input id="Filipino" type="number" placeholder="Filipino Grade">
+    <br><br>
+    <input id="ICT" type="number" placeholder="ICT Grade">
+    <input id="PE" type="number" placeholder="PE Grade">
+    <br><br>
+    <button py-click="general_weighted_average">Calculate GWA</button>
+    <br><br>
+    <p id="student_info"></p>
+    <p id="summary"></p>
+    <p id="output"></p>
+    <script type="py" src="main.py"></script>
+    </body></center>
+</html>
